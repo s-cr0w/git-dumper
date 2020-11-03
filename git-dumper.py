@@ -43,6 +43,7 @@ def get_indexed_files(response):
         if (url.path and
                 url.path != '.' and
                 url.path != '..' and
+                url.path != '../' and
                 not url.path.startswith('/') and
                 not url.scheme and
                 not url.netloc):
